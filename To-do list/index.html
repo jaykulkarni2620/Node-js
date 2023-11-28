@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+
+    <h2>To-Do List</h2>
+
+    <div>
+        <input type="text" id="todoInput" placeholder="Add a new to-do">
+        <button onclick="addTodo()">Add</button>
+    </div>
+
+    <ul id="todoList">
+        <!-- List items will be dynamically added here -->
+    </ul>
+
+    <!-- <script>
+        // Move the script to the end of the body to ensure HTML elements are loaded
+        const todoInput = document.getElementById("todoInput");
+        const todoList = document.getElementById("todoList");
+
+        function addTodo() {
+            const inputValue = todoInput.value;
+
+            if (inputValue.trim() === "") {
+                alert("Write something here");
+            } else {
+                let li = document.createElement("li");
+                li.innerHTML = inputValue;
+                todoList.appendChild(li);
+
+                // add the delete button
+                let span = document.createElement("span");
+                span.innerHTML = "\u00d7";
+                li.appendChild(span);
+
+                // clear the input field after adding the todo
+                todoInput.value = "";
+            }
+        }
+    </script> -->
+    <script src="Todo.js"></script>
+</body>
+</html>
